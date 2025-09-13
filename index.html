@@ -1,29 +1,75 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Psicóloga Thalita Santos | Terapia Online e Presencial</title>
 
+    <!-- SEO Básico -->
     <meta name="description" content="Encontre um espaço seguro e acolhedor com a Psicóloga Thalita Santos. Terapia online e presencial para ansiedade, depressão e autoconhecimento." />
-    <meta name="keywords" content="psicóloga, terapia, psicanalista, terapia online, ansiedade, depressão, saúde mental, thalita santos" />
+    <meta name="keywords" content="psicóloga, terapia, psicanalista, terapia online, ansiedade, depressão, saúde mental, Thalita Santos" />
     <meta name="author" content="Psicóloga Thalita Santos" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="icon" href="#" sizes="any" />
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
+    <!-- Open Graph (Facebook / LinkedIn) -->
     <meta property="og:title" content="Psicóloga Thalita Santos | Terapia Online e Presencial" />
     <meta property="og:description" content="Encontre um espaço seguro para sua jornada de autoconhecimento e bem-estar." />
-    <meta property="og:image" content="https://www.seusite.com.br/imagem-de-preview.jpg" />
-    <meta property="og:url" content="https://www.seusite.com.br" />
+    <meta property="og:image" content="/thalitaquatro.jpeg" />
+    <meta property="og:url" content="https://psicologa-thalita.vercel.app/" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
 
-    <meta name="theme-color" content="#ffffff" />
-    
+    <!-- Preload imagem para OG -->
+    <link rel="preload" as="image" href="/thalitaquatro.jpeg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Psicóloga Thalita Santos | Terapia Online e Presencial" />
+    <meta name="twitter:description" content="Encontre um espaço seguro para sua jornada de autoconhecimento e bem-estar." />
+    <meta name="twitter:image" content="/thalitaquatro.jpeg" />
+
+    <!-- PWA / Mobile -->
+    <meta name="theme-color" content="#f0f4f8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Fonts Modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Performance / SEO Extra -->
+    <link rel="canonical" href="https://psicologa-thalita.vercel.app/" />
+
+    <!-- CSS Animado de Carregamento -->
+    <style>
+      /* Efeito suave de fade-in no carregamento */
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #1f2937;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+      body.loaded {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+
+    <!-- Script para adicionar classe 'loaded' após carregamento -->
+    <script>
+      window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+      });
+    </script>
+
   </head>
   <body>
     <div id="root"></div>

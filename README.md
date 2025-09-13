@@ -1,69 +1,82 @@
-# React + TypeScript + Vite
+<h1 align="center">Thalita Santos - Psychologist & Psychoanalyst Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+A modern and responsive landing page built with React, Tailwind CSS, and Framer Motion, designed to showcase psychological services, specialties, and consultation options.
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#✨-main-features">Features</a> |
+  <a href="#💻-technologies-used">Technologies</a> |
+  <a href="#🚀-how-to-use">How to use</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img width="1342" height="594" alt="Image" src="https://github.com/user-attachments/assets/3a7c62a3-c8b4-41c0-b81b-d187bcc0c846" />
+  <img width="1339" height="568" alt="Image" src="https://github.com/user-attachments/assets/a1f83e36-7690-4e4c-92ea-1bfa187fd6d0" />
+  <img width="1335" height="577" alt="Image" src="https://github.com/user-attachments/assets/0cdeb312-ef4f-47e2-b659-daebd40104ec" />
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Main Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+This project was developed to provide an elegant and professional website for a psychologist, including:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Hero Section**
+  - Fullscreen background image
+  - Animated headline and call-to-action button (WhatsApp integration)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Navigation Header**
+  - Responsive design with mobile-friendly menu
+  - Smooth scroll navigation to all sections
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Sections**
+  - **About (Sobre):** Introduction and professional background
+  - **Specialties (Especialidades):** Grid layout with service cards
+  - **Consultation (Consultório):** Images and location details
+  - **FAQ (Dúvidas):** Collapsible question/answer section
+  - **Contact (Contato):** Footer with address, phone, WhatsApp, and social media
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Footer**
+  - Contact information with interactive icons
+  - Smooth scroll back-to-top button
+  - Social media links (Instagram, WhatsApp)
+
+- **Animations**
+  - Smooth fade-in transitions using **Framer Motion**
+  - Hover effects on links, cards, and buttons
+
+- **Modern and Responsive UI**
+  - Built with **Tailwind CSS**
+  - Fully responsive (desktop, tablet, mobile)
+
+---
+
+## 💻 Technologies Used
+
+- **React 18** with **Vite**
+- **TypeScript**
+- **Tailwind CSS** for utility styling
+- **shadcn/ui** for UI components
+- **Framer Motion** for animations
+- **Lucide Icons** for scalable icons
+
+---
+
+## 🚀 How to use
+
+Follow these steps to run the application locally:
+
+### **Requirements**
+- Node.js (v18+)
+- npm or yarn
+
+### **Configuration**
+```bash
+### **1. Clone the repository**
+git clone https://github.com/Alesson-porfiro/thalita-psychologist-site
+cd thalita-psychologist-site
+npm install
+npm run dev

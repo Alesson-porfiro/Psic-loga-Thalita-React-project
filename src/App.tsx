@@ -2,7 +2,6 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServiceSection";
-import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { FaqSection } from "@/components/FaqSection";
 import { ConsultorioSection } from "@/components/ConsultorioSection";

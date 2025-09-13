@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { BookOpen, BrainCircuit, MessageSquareQuote, Heart } from "lucide-react";
+import { BrainCircuit, MessageSquareQuote, Heart } from "lucide-react";
 
 export function ServicesSection() {
   return (

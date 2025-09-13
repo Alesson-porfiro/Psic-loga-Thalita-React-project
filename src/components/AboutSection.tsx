@@ -1,5 +1,3 @@
-// src/components/AboutSection.tsx
-
 import {
   Accordion,
   AccordionContent,

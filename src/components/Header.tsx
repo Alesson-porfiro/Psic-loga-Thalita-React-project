@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { easeOut } from "framer-motion";
+
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,13 +18,13 @@ export function Header() {
   }, []);
 
   const navItemVariants = {
-    hidden: { opacity: 0, y: -10 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: i * 0.1, duration: 0.4, ease: "easeOut" },
-    }),
-  };
+  hidden: { opacity: 0, y: -10 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.1, duration: 0.4, ease: easeOut },
+  }),
+};
 
   return (
     <motion.header

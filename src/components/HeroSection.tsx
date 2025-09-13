@@ -1,8 +1,7 @@
-// src/components/HeroSection.tsx
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, easeOut  } from "framer-motion";
 
 export function HeroSection() {
   const containerVariants = {
@@ -15,7 +14,11 @@ export function HeroSection() {
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeOut" } },
+    visible: { 
+      y: 0, 
+      opacity: 1, 
+      transition: { duration: 0.7, ease: easeOut }, // 👈 corrigido
+    },
   };
 
   return (

@@ -1,4 +1,4 @@
-// src/components/FaqSection.tsx
+
 
 import {
   Accordion,
@@ -6,8 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+
 
 export function FaqSection() {
   return (

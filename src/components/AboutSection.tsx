@@ -8,8 +8,8 @@ import { BrainCircuit, HeartHandshake, Zap, Users } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section 
-      id="sobre" 
+    <section
+      id="sobre"
       className="relative py-24 px-4 bg-gray-100 overflow-hidden" // Adicione bg-gray-100 como fallback e overflow-hidden
       style={{
         backgroundImage: "url('/5211331c3267926037327cb79eab9bd8.jpg')", // Use a nova imagem de fundo
@@ -19,12 +19,12 @@ export function AboutSection() {
       }}
     >
       <div className="container mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center px-6">
-        
+
         {/* Coluna da Imagem */}
         <div className="flex justify-center">
-          <img 
+          <img
             src="/sobremim.png" // Certifique-se que o caminho da imagem está correto
-            alt="Foto de Thalita Santos" 
+            alt="Foto de Thalita Santos"
             className="rounded-lg shadow-xl w-full max-w-md object-cover"
           />
         </div>
@@ -32,29 +32,29 @@ export function AboutSection() {
         {/* Coluna do Texto */}
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-extrabold bg-gray-700 bg-clip-text text-transparent">
               Thalita Santos
             </h2>
-            
-            <p className="text-lg text-muted-foreground font-medium">
+
+            <p className="text-lg text-gray-600 font-medium tracking-wide">
               Psicóloga - CRP 06/139597 | Psicanalista
             </p>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-gray-500 italic">
               Doutora em Psicanálise pela PUC – COGEAE
             </p>
           </div>
 
-    
-          <p className="text-gray-700 leading-relaxed">
+
+          <p className="text-gray-700 leading-relaxed text-lg">
             Focada em oferecer um ambiente empático e seguro, crio um espaço
             livre de julgamentos onde você pode se sentir compreendido para
             caminharmos juntos durante esse processo terapêutico.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed text-lg">
             Permita-se explorar suas questões emocionais com ajuda profissional. A psicoterapia pode
             ser uma ferramenta transformadora em sua vida.
           </p>
-          
+
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-semibold text-xl">
@@ -74,7 +74,7 @@ export function AboutSection() {
                     <Users className="h-5 w-5 text-blue-500" />
                     <span>Dificuldades em Relacionamentos</span>
                   </li>
-                   <li className="flex items-center gap-3">
+                  <li className="flex items-center gap-3">
                     <HeartHandshake className="h-5 w-5 text-blue-500" />
                     <span>Questões de autoestima e autoconhecimento</span>
                   </li>
